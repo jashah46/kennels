@@ -1,15 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Kennel } from "./components/Kennel";
+import { AnimalCard } from "./components/animal/AnimalCard";
+import { EmployeeCard } from "./components/EmployeeCard"; 
+import { LocationCard } from "./components/Location";
+import { CustomerCard } from "./components/Customer";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Kennel />
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+AnimalCard()
+EmployeeCard()
+LocationCard()
+CustomerCard()
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
