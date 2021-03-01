@@ -20,6 +20,8 @@ export const Kennel = () => (
       <AnimalCard />
       <AnimalCard />
       <AnimalCard />
+      <AnimalCard />
+      <AnimalCard />
   </article> 
 
   <h2>Employees</h2>
@@ -30,6 +32,8 @@ export const Kennel = () => (
 
   <h2>Locations</h2>
   <article className="locations">
+      <LocationCard />
+      <LocationCard />
       <LocationCard />
       <LocationCard />
   </article>
