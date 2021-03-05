@@ -6,16 +6,62 @@
             "breed": "Poodle",
             "customerId": 1,
             "locationId": 2 
+        },
+        {
+            "id": 2,
+            "name": "Enzo",
+            "breed": "German Shepard",
+            "customerId": 2,
+            "locationId": 2 
+        },
+        {
+            "id": 3,
+            "name": "Ella",
+            "breed": "Mutt",
+            "customerId": 2,
+            "locationId": 1 
         }
     ],
     "customer": [
         {
             "id": 1,
             "name": "Hannah Hall",
-            "address": "7002 Chestnut Ct"
+            "address": "7002 Chestnut Ct",
+            "animalsId": 1
+        },
+        {
+            "id": 2,
+            "name": "Malee Shah",
+            "address": "1 Chestnut Ct",
+            "animalsId": 2
         }
     ],
-    "employees": [],
+    "employees": [
+        {
+            "id": 1,
+            "name": "Jatin Shah",
+            "address": "1 Chestnut Ct",
+            "locationsId": 1
+        },
+        {
+            "id": 2,
+            "name": "Jane Doe",
+            "address": "999 Chestnut Ct",
+            "locationsId": 2
+        },
+        {
+            "id": 3,
+            "name": "Mary McFly",
+            "address": "1985 Chestnut Ct",
+            "locationsId": 1
+        },
+        {
+            "id": 4,
+            "name": "Jason",
+            "address": "Bottom of Camp Lake",
+            "locationsId": 2
+        }
+    ],
     "locations": [
         {
             "id": 1,
