@@ -22,7 +22,7 @@
             "locationId": 1 
         }
     ],
-    "customer": [
+    "customers": [
         {
             "id": 1,
             "name": "Hannah Hall",

@@ -8,12 +8,12 @@ export const CustomerProvider = (props) => {
     const [customers, setCustomers] = useState([])
 
     const getCustomers = () => {
-        return fetch("http://localhost:8088/customers?_expand=location")
+        return fetch("http://localhost:8088/customers")
         .then(res => res.json())
         .then(setCustomers)
     }
-
-    const addCustomer = CustomerObj => {
+    
+    const addCustomer = customerObj => {
         return fetch("http://localhost:8088/customers", {
             method: "POST",
             headers: {
@@ -32,7 +32,7 @@ export const CustomerProvider = (props) => {
     */
     return (
         <CustomerContext.Provider value={{
-            customers, getcustomers, addCustomers
+            customers, getCustomers, addCustomer
         }}>
             {props.children}
         </CustomerContext.Provider>

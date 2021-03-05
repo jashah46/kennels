@@ -8,6 +8,7 @@ export const AnimalList = () => {
   const { animals, getAnimals } = useContext(AnimalContext)
 
   //useEffect - reach out to the world for something
+  
   useEffect(() => {
     console.log("AnimalList: useEffect - getAnimals")
     getAnimals()
@@ -16,6 +17,7 @@ export const AnimalList = () => {
 
 
   return (
+    <>
     <div className="animals">
       {console.log("AnimalList: Render", animals)}
       {
@@ -24,5 +26,6 @@ export const AnimalList = () => {
         })
       }
     </div>
+    </>
   )
 }

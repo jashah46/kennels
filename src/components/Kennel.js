@@ -1,13 +1,20 @@
+// import React from "react"
+// import { AnimalCard } from "./animal/AnimalCard"
+// import { EmployeeCard } from "./EmployeeCard"
+// import { CustomerCard } from "./Customer"
+// import { LocationCard } from "./Location"
+// import "./Kennel.css"
+
 import React from "react"
-import { AnimalCard } from "./animal/AnimalCard"
-import { EmployeeCard } from "./EmployeeCard"
-import { CustomerCard } from "./Customer"
-import { LocationCard } from "./Location"
+import { ApplicationViews } from "./ApplicationViews"
 import "./Kennel.css"
-import { PropsAndState} from "./PropsandState"
+import { NavBar } from "./nav/NavBar"
 
 export const Kennel = () => (
-  <>
+    <>
+        <NavBar />
+        <ApplicationViews />
+    
   <h2>Nashville Kennels</h2>
   <small>Loving care when you're not there.</small>
 
@@ -15,37 +22,38 @@ export const Kennel = () => (
       <div>Visit Us at the Nashville North Location</div>
       <div>500 Puppy Way</div>
   </address>
-
-  <PropsAndState yourName="jatin" />
-  <h2>Animals</h2>
-  <article className="animals">
+{/* 
+  {/* <h2>Animals</h2>
+  <article className="animals"> */}
       {/* <AnimalCard />
       <AnimalCard />
       <AnimalCard />
       <AnimalCard />
       <AnimalCard /> */}
-  </article> 
+  {/* </article>  */}
 
-  <h2>Employees</h2>
+  {/* <h2>Employees</h2>
   <article className="employees">
       {/* <EmployeeCard />
       <EmployeeCard /> */}
-  </article>
+  {/* </article> */}
 
-  <h2>Locations</h2>
-  <article className="locations">
+{/* //   <h2>Locations</h2>
+//   <article className="locations"> */}
       {/* <LocationCard />
       <LocationCard />
       <LocationCard />
       <LocationCard /> */}
-  </article>
+  {/* </article> */}
 
-  <h2>Customers</h2>
-  <article className="customers">
-      {/* <CustomerCard />
-      <CustomerCard />
-      <CustomerCard />
-      <CustomerCard /> */}
-  </article>
+{/* //   <h2>Customers</h2>
+//   <article className="customers"> */}
+//       {/* <CustomerCard />
+//       <CustomerCard />
+//       <CustomerCard />
+//       <CustomerCard /> */}
+{/* //   </article> */}
+  
+
   </>
 )

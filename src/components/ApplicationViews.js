@@ -4,8 +4,11 @@ import { Home } from "./Home"
 import { AnimalList } from "./animal/AnimalList"
 import { AnimalProvider } from "./animal/AnimalProvider"
 import { CustomerProvider } from "./CustomerProvider"
-import { LocationProvider } from "/.LocationProvider"
-import { EmployeeProvider } from "/.EmployeeProvider"
+import { LocationProvider } from "./LocationProvider"
+import { EmployeeProvider } from "./EmployeeProvider"
+import { CustomerList } from "./CustomerList"
+import { LocationList } from "./LocationList"
+import { EmployeeList } from "./EmployeeList"
 
 export const ApplicationViews = () => {
     return (
@@ -34,13 +37,15 @@ export const ApplicationViews = () => {
             {/* Render the locations list when http://localhost:3000/locations */}
             <Route path="/locations">
                 <h2>Locations</h2>
+                <AnimalProvider>
                 <LocationProvider>
                     <LocationList />
                 </LocationProvider>
+                </AnimalProvider>
             </Route>
 
             {/* Render the employees list when http://localhost:3000/employees */}
-            <Route path="/employee">
+            <Route path="/employees">
                 <h2>Employees</h2>
                 <EmployeeProvider>
                     <EmployeeList />
