@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react"
 import { CustomerContext } from "./CustomerProvider"
-import { CustomerCard } from "./CustomerCard"
+import { CustomerCard } from "./Customer"
 import "./Customer.css"
 
 export const CustomerList = () => {
@@ -14,7 +14,7 @@ export const CustomerList = () => {
 
   }, [])
 
-
+  
   return (
     <div className="customers">
       {console.log("CustomerList: Render", customers)}
@@ -25,4 +25,4 @@ export const CustomerList = () => {
       }
     </div>
   )
-}
+    }

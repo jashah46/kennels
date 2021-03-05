@@ -1,8 +1,8 @@
 import React from "react"
-import { Link } from "reach-router-dom"
+import { Link } from "react-router-dom"
 import "./NavBar.css" 
 
-export const NavBAr = (props) => {
+export const NavBar = (props) => {
     return (
         <ul className="navbar">
             <li className="navbar__item active">

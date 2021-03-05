@@ -8,13 +8,13 @@ export const LocationProvider = (props) => {
     const [locations, setLocations] = useState([])
 
     const getLocations = () => {
-        return fetch("http://localhost:8088/locations?_expand=location")
+        return fetch("http://localhost:8088/locations")
         .then(res => res.json())
         .then(setLocations)
     }
 
-    const addLocation = LocationsObj => {
-        return fetch("http://localhost:8088/Locations", {
+    const addLocation = locationObj => {
+        return fetch("http://localhost:8088/locations", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -32,7 +32,7 @@ export const LocationProvider = (props) => {
     */
     return (
         <LocationContext.Provider value={{
-            Location, getLocations, addLocations
+            locations, getLocations, addLocation
         }}>
             {props.children}
         </LocationContext.Provider>
