@@ -32,7 +32,7 @@ export const EmployeeProvider = (props) => {
     */
     return (
         <EmployeeContext.Provider value={{
-            Employees, getEmployees, addEmployees
+            employees, getEmployees, addEmployees
         }}>
             {props.children}
         </EmployeeContext.Provider>

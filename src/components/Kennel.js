@@ -19,33 +19,33 @@ export const Kennel = () => (
   <PropsAndState yourName="jatin" />
   <h2>Animals</h2>
   <article className="animals">
+      {/* <AnimalCard />
       <AnimalCard />
       <AnimalCard />
       <AnimalCard />
-      <AnimalCard />
-      <AnimalCard />
+      <AnimalCard /> */}
   </article> 
 
   <h2>Employees</h2>
   <article className="employees">
-      <EmployeeCard />
-      <EmployeeCard />
+      {/* <EmployeeCard />
+      <EmployeeCard /> */}
   </article>
 
   <h2>Locations</h2>
   <article className="locations">
+      {/* <LocationCard />
       <LocationCard />
       <LocationCard />
-      <LocationCard />
-      <LocationCard />
+      <LocationCard /> */}
   </article>
 
   <h2>Customers</h2>
   <article className="customers">
+      {/* <CustomerCard />
       <CustomerCard />
       <CustomerCard />
-      <CustomerCard />
-      <CustomerCard />
+      <CustomerCard /> */}
   </article>
   </>
 )
